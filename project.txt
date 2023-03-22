@@ -1,0 +1,51 @@
+  
+
+
+
+  Contact management App
+
+  1. Create angular project
+  2. Install bootstrap  and font-awsome ------    npm i bootstrap @fortawesome/fontawesome-free
+  3. Past  cdn link of font-awesome in index.html
+  4. Configure bootstrap and font awesome  in angular      .json C:\Users\parth\Desktop\sample folder\Angular\contactApp\node_modules\bootstrap\dist\css\bootstrap.min.css
+."node_modules\bootstrap\dist\css\bootstrap.min.css"                                                           
+.                                                           C:\Users\parth\Desktop\sample folder\Angular\contactApp\node_modules\@fortawesome\fontawesome-free\css\all.css
+"node_modules\@fortawesome\fontawesome-free\css\all.css"
+
+.                                                           C:\Users\parth\Desktop\sample folder\Angular\contactApp\
+"node_modules\bootstrap\dist\js\bootstrap.bundle.js"
+
+ 5. Configure google fonts  in style.css / index.html
+ 6. Check all works fine 
+ 7. Create components neded to display in webpage
+
+.            - contactManager - to view all contacts
+.            - addContact - to add a new contact
+.            - updateContact  to edit existing contact
+.            - viewContact - to view a particular contact
+.            - pageNotFound - 
+.            - Navbar - placed its selector inside root component html page
+
+8. Set up path for each companents in order to view it in browser
+.            - Set up path for each companents in app-routing.module.ts  ,routes array
+.            - in ap-component.html add router-outlet selector for displaying different web page as per user request
+9. set up the server API 
+.            - create server folder inside the project
+.            - create db.json file
+.            - open cmd from server folder
+.                      - create package.jason file - command : npm init
+.                      - install json-server inside server folder
+.                      - Update package.json file , script as : "start": "json-server --watch db.json --port 3000"
+.                      - to run server use command : npm start 
+10. Create model for contact and group
+,            - create model folderin src folder 
+.            - create myContact.ts file 
+.            - create myGroup.ts file
+11. Create an angular service for making api call
+12. To get http method - get , post , put , patch , delete
+.            -Impoert HttpClientModule in app.module.ts
+.            - Dependency Inject HttpClient in api service ts file
+
+
+
+

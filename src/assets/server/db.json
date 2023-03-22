@@ -1,0 +1,126 @@
+{
+    "contacts": [
+      {
+        "id": "c1",
+        "name": "Leanne Graham",
+        "email": "Sincere@april.biz",
+        "photo": "https://igimages.gumlet.io/tamil/gallery/actor/harishkalyan9316/poster.jpg?w=160&dpr=2.6",
+        "mobile": "9745372435",
+        "company": "Romaguera-Crona",
+        "title":"Manager",
+        "groupId":"1"
+      },
+      {
+        "id": "c2",
+        "name": "Ervin Howell",
+        "email": "Shanna@melissa.tv",
+        "photo":"https://i.pinimg.com/originals/99/62/e0/9962e0d909a55e2dee6ba37df6ba3399.jpg",
+        "mobile": "9745372495",
+        "company": "Deckow-Crist",
+        "title":"Developer",
+        "groupId":"3"
+      },
+      {
+        "id": "c3",
+        "name": "Patricia Lebsack",
+        "email": "Julianne.OConner@kory.org",
+        "photo": "https://www.mrdustbin.com/en/wp-content/uploads/2021/05/leonardo-dicaprio-853x1024.jpg",
+        "mobile": "9745372409",
+        "company": "Robel-Corkery",
+        "title":"manager",
+        "groupId":"4"
+      },
+      {
+        "id": "c4",
+        "name": "Clementine Bauch",
+        "email": "Nathan@yesenia.net",
+        "photo": "https://www.mrdustbin.com/en/wp-content/uploads/2021/05/dwayne-johnson.jpg",
+        "mobile": "9745372405",
+        "company": "Romaguera-Jacobson",
+        "title":"Network Admin",
+        "groupId":"3"
+      },
+      {
+        "id": "c5",
+        "name": "Chelsey Dietrich",
+        "email": "Lucio_Hettinger@annie.ca",
+        "photo": "https://www.zestvine.com/wp-content/uploads/2021/05/Ryan-Reynolds-Height.jpg",
+        "mobile": "9745372890",
+        "company": "Romaguera-Crona",
+        "title":"manager",
+        "groupId":"1"
+      },
+      {
+        "id": "c6",
+        "name": "Mrs. Dennis Schulist",
+        "email": "Karley_Dach@jasper.info",
+        "photo": "https://lh4.googleusercontent.com/xbNT6TfkbehL8-P3CJCbi485tUqgW6U9azPdhXAoNLb1gGaPEyLOr9aanlD9g2iBd27BEK7Q74Ge68Zu1ROohIj4XDJL6_2HGilUvLqPHGYIT2Se_UVKQSfR7BwhEomPgRVmLmut",
+        "mobile": "9745375097",
+        "company": "Considine-Lockman",
+        "title":"manager",
+        "groupId":"4"
+      },
+      {
+        "id": "c7",
+        "name": "Kurtis Weissnat",
+        "email": "Telly.Hoeger@billy.biz",
+        "photo": "https://i.pinimg.com/originals/c8/e3/30/c8e330ab0f20738b0efc6a09173063e8.jpg",
+        "mobile": "9745372000",
+        "company": "Johns Group",
+        "title":"Developer",
+        "groupId":"3"
+      },
+      {
+        "id": "c8",
+        "name": "Nicholas Runolfsdottir V",
+        "email": "Sherwood@rosamond.me",
+        "photo": "https://siachenstudios.com/wp-content/uploads/2022/03/robert-1024x1024.jpg",
+        "mobile": "9775372435",
+        "company": "Abernathy Group",
+        "title":"Network Admin",
+        "groupId":"1"
+      },
+      {
+        "id": "c9",
+        "name": "Glenna Reichert",
+        "email": "Chaim_McDermott@dana.io",
+        "photo": "https://cdn.shopify.com/s/files/1/0182/8937/files/tom_hordy_1024x1024.jpg?v=1482502984",
+        "mobile": "9700972435",
+        "company": "Yost and Sons",
+        "title":"manager",
+        "groupId":"3"
+      },
+      {
+        "id": "c10",
+        "name": "Clementina DuBuque",
+        "email": "Moriah.Stanton",
+        "photo": "https://im.idiva.com/photogallery/2012/Mar/naveen_andrews.jpg?w=450&h=600&cc=1",
+        "mobile": "9700982435",
+        "company": "Romaguera-Crona",
+        "title":"Developer",
+        "groupId":"2"
+      }
+    ],
+    "groups":[ 
+    {
+            "id":"1",
+            "name":"Friends"
+    },
+
+    {
+           "id":"2",
+           "name":"Family"
+    },
+
+    {
+           "id":"3",
+           "name":"Collegues"
+    },
+
+    {
+          "id":"4",
+           "name":"Social"
+    }
+
+]
+  }

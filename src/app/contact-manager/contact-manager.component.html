@@ -1,0 +1,72 @@
+<div class="cotainer title mt-2">
+    <div class="row">
+        <div class="col m-5">
+            <h1>Contact Management Application
+
+                <a routerLink="/contacts/add" class="btn btn-success">
+                    <i class="fa-solid fa-user-plus"></i>&nbsp;
+                    Add New
+                </a>
+            </h1>
+
+            <p style="text-align: justify;">
+                This is dummy data: Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequatur, nulla dolore inventore eius libero magni officiis, quos soluta, ut consequuntur. Accusamus, inventore ratione accusantium error nobis hic iste pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde excepturi harum sunt saepe, exercitationem numquam incidunt voluptates non sit deleniti, dolor eum assumenda commodi accusamus eaque velit vero odit! Modi?This is dummy data: Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequatur, nulla dolore inventore eius libero magni officiis, quos soluta, ut consequuntur. Accusamus, inventore ratione accusantium error nobis hic iste pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde excepturi harum sunt saepe, exercitationem numquam incidunt voluptates non sit deleniti, dolor eum assumenda commodi accusamus eaque velit vero odit! Modi?
+            </p>
+            <div class="row">
+                <div class="col-6">
+                    <input (keyup)="search($event)" type="text" class="form-control" placeholder="Search Contact">
+                </div>
+             
+            </div>
+
+             <!--
+            <pre>
+                {{allContacts | json}}
+            </pre> 
+            ----->
+
+            <!-- card design-->
+
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-md-6 mt-3" *ngFor="let contact of  allContacts | filter : searchKey : 'name' ">
+                        <div class="card list-group-item-secondary">
+                            <div class="row">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-3">
+                                            <!-------------------contact image-------------->
+                                                <img height="150px" [src]="contact.photo" alt="no image" class="contact_image">
+                                            </div>
+                                            <!-------------------contact detais-------------->
+                                            <div class="col-md-7">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">Name : <span><b>{{contact.name }}</b></span></li>
+                                                    <li class="list-group-item">Email : <span>{{contact.email}}</span></li>
+                                                    <li class="list-group-item">Mlobile : <span>{{contact.mobile}}</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-2 d-flex flex-column justify-content-center align-items-center ">
+                                            <!-------------------view contact-------------->
+                                                <a routerLink="/contacts/view/{{contact.id}}" class="btn btn-warning">
+                                                    <i class="fa-solid fa-eye"></i>
+                                                </a>
+                                            <!-------------------edit contact-------------->
+                                                <a routerLink="/contacts/edit/:contactId" class="btn btn-success mt-1">
+                                                    <i class="fa-solid fa-pen"></i>
+                                                </a>
+                                            <!-------------------delete contact------------->
+                                                <button class="btn btn-danger mt-1">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </button>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

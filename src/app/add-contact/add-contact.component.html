@@ -1,0 +1,62 @@
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col">
+            <h1>
+                    <i class="fa-solid fa-user-plus"></i>&nbsp;
+                    Add contact page
+            </h1>
+
+            <p style="text-align: justify;">
+                This is dummy data: Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequatur, nulla dolore inventore eius libero magni officiis, quos soluta, ut consequuntur. Accusamus, inventore ratione accusantium error nobis hic iste pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde excepturi harum sunt saepe, exercitationem numquam incidunt voluptates non sit deleniti, dolor eum assumenda commodi accusamus eaque velit vero odit! Modi?This is dummy data: Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequatur, nulla dolore inventore eius libero magni officiis, quos soluta, ut consequuntur. Accusamus, inventore ratione accusantium error nobis hic iste pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde excepturi harum sunt saepe, exercitationem numquam incidunt voluptates non sit deleniti, dolor eum assumenda commodi accusamus eaque velit vero odit! Modi?
+            </p>
+        </div>
+    </div>
+
+    <!--  <pre>
+        {{contactName}}
+    </pre>-->
+
+    <!--  add contact form  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form class="border p-3 rounded">
+                    <div class="mb-2">
+                        <input name="contactName" [(ngModel)]="contactName" placeholder="Name" type="text" class="form-control">
+                    </div>
+                    <div class="mb-2">
+                        <input  placeholder="photo URL" type="text" class="form-control">
+                    </div>
+                    <div class="mb-2">
+                        <input placeholder="Email ID" type="text" class="form-control">
+                    </div>
+                    <div class="mb-2">
+                        <input placeholder="Mobile Number" type="text" class="form-control">
+                    </div>
+                    <div class="mb-2">
+                        <input placeholder="Company" type="text" class="form-control">
+                    </div>
+                    <div class="mb-2">
+                        <input placeholder="Title" type="text" class="form-control">
+                    </div>
+                    <div class="mb-2">
+                        <select name="" id="" class="form-control">
+                            <option value="" selected hidden disabled>Select a group</option>
+                            <option value="{{group.id}}" *ngFor="let group of allGroups">{{group.name}}</option>
+                        </select>
+                    </div>
+                    <div class="mb-2">
+                        <input (click)="addContact()" value="Create" type="button" class="btn btn-success">
+                        <a routerLink="/" class="btn btn-warning ms-3">Close</a>
+                    </div>               
+                </form>
+            </div>
+            <div class="col-md-4">
+                <img src="https://icons-for-free.com/iconfiles/png/512/boy+guy+man+icon-1320166733913205010.png" alt="no image" class="contact_image" >
+
+            </div>
+        </div>
+    </div>
+
+</div>
