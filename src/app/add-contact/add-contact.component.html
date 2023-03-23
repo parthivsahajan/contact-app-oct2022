@@ -13,9 +13,8 @@
         </div>
     </div>
 
-    <!--  <pre>
-        {{contactName}}
-    </pre>-->
+  
+    <!--   {{contact | json}} -->
 
     <!--  add contact form  -->
     <div class="container">
@@ -23,25 +22,28 @@
             <div class="col-md-6">
                 <form class="border p-3 rounded">
                     <div class="mb-2">
-                        <input name="contactName" [(ngModel)]="contactName" placeholder="Name" type="text" class="form-control">
+                        <input name="id" [(ngModel)]="contact.id" placeholder="Contact ID" type="text" class="form-control">
                     </div>
                     <div class="mb-2">
-                        <input  placeholder="photo URL" type="text" class="form-control">
+                        <input name="contactName" [(ngModel)]="contact.name" placeholder="Name" type="text" class="form-control">
                     </div>
                     <div class="mb-2">
-                        <input placeholder="Email ID" type="text" class="form-control">
+                        <input name="photo" [(ngModel)]="contact.photo" placeholder="Photo URL" type="text" class="form-control">
                     </div>
                     <div class="mb-2">
-                        <input placeholder="Mobile Number" type="text" class="form-control">
+                        <input name="email" [(ngModel)]="contact.email" placeholder="Email ID" type="text" class="form-control">
                     </div>
                     <div class="mb-2">
-                        <input placeholder="Company" type="text" class="form-control">
+                        <input name="mobile" [(ngModel)]="contact.mobile" placeholder="Mobile Number" type="text" class="form-control">
                     </div>
                     <div class="mb-2">
-                        <input placeholder="Title" type="text" class="form-control">
+                        <input name="company" [(ngModel)]="contact.company" placeholder="Company" type="text" class="form-control">
                     </div>
                     <div class="mb-2">
-                        <select name="" id="" class="form-control">
+                        <input name="title" [(ngModel)]="contact.title" placeholder="Title" type="text" class="form-control">
+                    </div>
+                    <div class="mb-2">
+                        <select  name="groupId" [(ngModel)]="contact.groupId" id="" class="form-control">
                             <option value="" selected hidden disabled>Select a group</option>
                             <option value="{{group.id}}" *ngFor="let group of allGroups">{{group.name}}</option>
                         </select>
@@ -53,8 +55,9 @@
                 </form>
             </div>
             <div class="col-md-4">
-                <img src="https://icons-for-free.com/iconfiles/png/512/boy+guy+man+icon-1320166733913205010.png" alt="no image" class="contact_image" >
-
+                <!----https://icons-for-free.com/iconfiles/png/512/boy+guy+man+icon-1320166733913205010.png-->
+                <img [src]="contact.photo" alt="no image" class="contact_image" >
+                
             </div>
         </div>
     </div>
